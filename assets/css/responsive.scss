@@ -1,0 +1,250 @@
+@mixin  mediaCss($width){
+    @media screen and (max-width: $width){
+        @content
+    }
+}
+
+@include mediaCss(1650px){
+    .ringTxt{
+        .ringTxtInner{
+            .btnBorder {
+                width: 50%;
+            }
+        }
+    }
+    .exploreBg:before {
+        height: 1000px;
+        top: -25%;
+        width: 79%;
+        transform: rotate(21deg);
+        background-size: contain;
+    }
+    .braceletsTxt{
+        h5 {
+            font-size: 60px;
+            line-height: normal;
+        }
+    }
+    .imgBracelets{
+        .seventytwo {
+            height: 100px;
+        }
+        .braceletsPicture {
+            height: 378px;
+        }
+    }
+}
+@include mediaCss(1500px){
+    .exploreItems{
+        .expoloerInner{
+            .imgRow{
+                img.prodDemo {
+                    height: 90px;
+                }
+            }
+        }
+    }
+    .exploreSection{
+        width: 100% !important;
+    }
+    .padCol{
+        padding: 0 20px;
+    }
+}
+@include mediaCss(1360px){
+    .ringBox{
+        .ringsInner {
+            width: 546px;
+            top: 90px;
+        }
+    }
+    .ringTxt{
+        .ringTxtInner{
+            h4 {
+                font-size: 50px;
+                margin-top: 90px;
+            }
+        }
+    }
+    .desParah, .braceletsTxt p, .ringTxt .ringTxtInner p {
+        font-size: 13px;
+    }
+}
+
+@include mediaCss(992px){
+    .ringBox{
+        display: none;
+    }
+    .ringTxt{
+        .ringTxtInner{
+            h4 {
+                margin-top: 190px;
+            }
+        }
+    }
+    .bannerHome {
+        height: 1000px;
+    }
+    .exploreHead {
+        font-size: 70px;
+        line-height: 63px;
+    }
+    .viewBtn {
+        margin-top: 0;
+        justify-content: flex-start;
+    }
+    .exploreItems{
+        .expoloerInner{
+            .imgRow{
+                h6{
+                    span.disCount {
+                        padding: 5px 8px 2px 8px;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }    
+    .braceletsTxt h5 {
+        font-size: 40px;
+    }
+    .populerCol{
+        width: 49%;
+        max-width: unset !important;
+        flex: unset !important;
+    }
+    .populerProd{
+        img {
+            height: 100px;
+        }
+        h4 {
+            font-size: 24px;
+        }
+        .prodBtn {
+            width: 70%;
+            bottom: -12px;
+            font-size: 23px;
+            border-radius: 45px;
+        }
+        span {
+            color: #EB9F5F;
+            font-size: 22px;
+        }
+    }
+}
+
+@include mediaCss(768px){
+    .exploreItems{
+        .expoloerInner{
+            .exploreProd{
+                span {
+                    font-size: 23px;
+                    svg{
+                        font-size: 15px;
+                    }
+                }
+            }
+            .itemCount {
+                font-size: 20px;
+            }
+        }
+    }
+    .exploreHead {
+        font-size: 40px;
+        line-height: 42px;
+    }
+    .imgBracelets{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .exploreBg:before {
+        display: none;
+    }
+    .braceletsTxt{
+        h5 {
+            margin-top: 20px;
+        }
+    }
+}
+
+@include mediaCss(575px){
+    .ringTxt{
+        .ringTxtInner{
+            h4 {
+                margin-top: 80px;
+                font-size: 40px;
+                line-height: normal !important;
+            }
+            .btnBorder {
+                width: 80%;
+            }
+        }
+    }
+    .imgBracelets{
+        .braceletsPicture {
+            height: 225px;
+        }
+    }
+    .populerCol {
+        width: 90%;
+        margin: 50px auto 0 auto;
+    }
+    .populerBox{
+        h5 {
+            color: #018AFE;
+            font-size: 70px;
+            line-height: 65px;
+        }
+    }
+}
+
+@include mediaCss(435px){
+    .ringTxt{
+        .ringTxtInner{
+            h4 {
+                font-size: 30px;
+            }
+        }
+    }
+    .desParah, .braceletsTxt p, .ringTxt .ringTxtInner p {
+        font-size: 12px;
+    }
+}
+
+@include mediaCss(375px){
+    .exploreHead {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .viewBtn a {
+        font-size: 18px;
+        svg {
+            margin-left: 9px;
+            font-size: 15px;
+        }
+    }
+    .braceletsTxt{
+        h5 {
+            font-size: 27px;
+        }
+    }
+    .braceletsTxt{
+        .braceletsFlex {
+            flex-wrap: wrap;
+            .buyIt {
+                font-size: 20px;
+            }
+            .ratingsItem{
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+    .populerBox{
+        h5 {
+            font-size: 61px;
+            line-height: 50px;
+        }
+    }
+}

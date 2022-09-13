@@ -1,0 +1,179 @@
+@media screen and (max-width: 1650px) {
+  .ringTxt .ringTxtInner .btnBorder {
+    width: 50%;
+  }
+  .exploreBg:before {
+    height: 1000px;
+    top: -25%;
+    width: 79%;
+    transform: rotate(21deg);
+    background-size: contain;
+  }
+  .braceletsTxt h5 {
+    font-size: 60px;
+    line-height: normal;
+  }
+  .imgBracelets .seventytwo {
+    height: 100px;
+  }
+  .imgBracelets .braceletsPicture {
+    height: 378px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .exploreItems .expoloerInner .imgRow img.prodDemo {
+    height: 90px;
+  }
+  .exploreSection {
+    width: 100% !important;
+  }
+  .padCol {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .ringBox .ringsInner {
+    width: 546px;
+    top: 90px;
+  }
+  .ringTxt .ringTxtInner h4 {
+    font-size: 50px;
+    margin-top: 90px;
+  }
+  .desParah, .braceletsTxt p, .ringTxt .ringTxtInner p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .ringBox {
+    display: none;
+  }
+  .ringTxt .ringTxtInner h4 {
+    margin-top: 190px;
+  }
+  .bannerHome {
+    height: 1000px;
+  }
+  .exploreHead {
+    font-size: 70px;
+    line-height: 63px;
+  }
+  .viewBtn {
+    margin-top: 0;
+    justify-content: flex-start;
+  }
+  .exploreItems .expoloerInner .imgRow h6 span.disCount {
+    padding: 5px 8px 2px 8px;
+    font-size: 17px;
+  }
+  .braceletsTxt h5 {
+    font-size: 40px;
+  }
+  .populerCol {
+    width: 49%;
+    max-width: unset !important;
+    flex: unset !important;
+  }
+  .populerProd img {
+    height: 100px;
+  }
+  .populerProd h4 {
+    font-size: 24px;
+  }
+  .populerProd .prodBtn {
+    width: 70%;
+    bottom: -12px;
+    font-size: 23px;
+    border-radius: 45px;
+  }
+  .populerProd span {
+    color: #EB9F5F;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .exploreItems .expoloerInner .exploreProd span {
+    font-size: 23px;
+  }
+  .exploreItems .expoloerInner .exploreProd span svg {
+    font-size: 15px;
+  }
+  .exploreItems .expoloerInner .itemCount {
+    font-size: 20px;
+  }
+  .exploreHead {
+    font-size: 40px;
+    line-height: 42px;
+  }
+  .imgBracelets {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .exploreBg:before {
+    display: none;
+  }
+  .braceletsTxt h5 {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .ringTxt .ringTxtInner h4 {
+    margin-top: 80px;
+    font-size: 40px;
+    line-height: normal !important;
+  }
+  .ringTxt .ringTxtInner .btnBorder {
+    width: 80%;
+  }
+  .imgBracelets .braceletsPicture {
+    height: 225px;
+  }
+  .populerCol {
+    width: 90%;
+    margin: 50px auto 0 auto;
+  }
+  .populerBox h5 {
+    color: #018AFE;
+    font-size: 70px;
+    line-height: 65px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .ringTxt .ringTxtInner h4 {
+    font-size: 30px;
+  }
+  .desParah, .braceletsTxt p, .ringTxt .ringTxtInner p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .exploreHead {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .viewBtn a {
+    font-size: 18px;
+  }
+  .viewBtn a svg {
+    margin-left: 9px;
+    font-size: 15px;
+  }
+  .braceletsTxt h5 {
+    font-size: 27px;
+  }
+  .braceletsTxt .braceletsFlex {
+    flex-wrap: wrap;
+  }
+  .braceletsTxt .braceletsFlex .buyIt {
+    font-size: 20px;
+  }
+  .braceletsTxt .braceletsFlex .ratingsItem {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .populerBox h5 {
+    font-size: 61px;
+    line-height: 50px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

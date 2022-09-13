@@ -1,0 +1,415 @@
+
+// THEMES COLOR PARTIALS
+@import"ColorThemes";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italianno&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// font-family: 'Bebas Neue', cursive;
+// font-family: 'Italianno', cursive;
+// font-family: 'Poppins', sans-serif;
+
+
+
+//++  GLOBAL CSS  ++//
+
+section{
+    overflow-x: clip;
+}
+body{
+    font-family: 'Bebas Neue', cursive;   
+    overflow-x: clip;
+    // height: 50000px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 30px;
+}
+a{
+    font-family: 'Bebas Neue', cursive; 
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    &:hover{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+span{
+    display: block;
+    font-family: 'Bebas Neue', cursive; 
+}
+p{
+    color: gray;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.desParah{
+    color: $paraColor;
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+
+
+// ++ own making container class like boostrap ++ //
+.makeOwn{
+    width: 85%;
+    margin: auto;
+    display: block;
+}
+// .marCon{
+//    margin-top: 215px;
+// }
+
+
+// ++  HOME PAGE SCSS START FROM HERE NOW  ++ //
+
+.bannerHome{
+    background-image: url(../images/banners/bannerHome.webp);
+    display: flex;
+    height: 1148px;
+    width: 100%;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+.headerComp{
+    position: absolute;
+    width: 100%;
+    right: 0;
+    left: 0;
+    .navbar-brand{
+        img{
+            height: 130px;
+        }
+    }
+    .navbar-toggler{
+        color: black;
+        padding: 4px 4px;
+        background: linear-gradient(27deg, rgb(159, 89, 249) 25%, rgb(30, 127, 253) 52%, rgb(235, 118, 196) 100%);
+        z-index: 3;
+    }
+    .navbar-collapse{
+        background: linear-gradient(27deg, rgb(159, 89, 249) 25%, rgb(30, 127, 253) 52%, rgb(235, 118, 196) 100%);
+        z-index: 999;
+        position: absolute;
+        right: 0px;
+        top: 68%;
+        width: 300px;
+        ul{
+            li{
+                a{
+                    padding: 0px 0px 0px 16px;
+                    line-height: 70px;
+                    font-size: 17px;
+                    letter-spacing: 0px;
+                    font-family: "Poppins", sans-serif;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    border-bottom: 2px dashed #dae0e5;
+                    color: white !important;
+                }
+            }
+        }
+    }
+}
+
+.ringBox{
+        position: relative;
+        top: 0;
+        height: 615px;
+    .ringsInner{
+        background-image: url(../images/rings.webp);
+        width: 900px;
+        height: 726px;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: -5%;
+    }
+    .ringModal{
+        position: absolute;
+        top: 55%;
+        .imgModal{
+            position: relative;
+            img{
+                height: 250px;
+            }
+            span{
+                cursor: pointer;
+                position: absolute;
+                right: -14px;
+                top: -7px;
+                background: white;
+                padding: 2px 9px 0 9px;
+                margin: 0;
+                line-height: 26px;
+                font-size: 17px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.ringTxt{
+    .ringTxtInner{
+        position: relative;
+        h4{
+            color: $textColor;
+            font-size: 88px;
+            margin-top: 90px;
+            line-height: 82px;
+        }
+        span{
+            color: #018AFE;
+            font-family: "Italianno", cursive;
+            font-size: 23px;
+            -webkit-text-stroke: white;
+            text-transform: uppercase;
+            -webkit-text-stroke-width: 0.25px;
+            stroke-width: 25px;
+            -webkit-text-stroke-color: #FFFFFF;
+            stroke: #FFFFFF;
+            text-shadow: 0px 0px 10px rgb(0 0 0 / 66%);
+            font-weight: 400;
+            letter-spacing: 3px;
+        }
+        p{
+            @extend .desParah;
+        }
+        .btnBorder{
+            background: linear-gradient(27deg, rgb(137, 116, 160) 25%, rgb(145, 143, 94) 75%);
+            width: 25%;
+            padding: 5px 5px 7px 5px;
+            border-radius: 45px;
+            a{
+                color: #018AFE;
+                background-color: white;
+                text-align: center;
+                padding: 15px 0 12px 0;
+                border-radius: 45px;
+                font-size: 27px;
+                border: 4px solid #5d6368;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+.exploreHead{
+    color: $textColor;
+    margin-top: 98px;
+    font-size: 100px;
+    line-height: 94px;
+    text-shadow: 55px -11px 3px #374256;
+}
+
+.viewBtn{
+    margin-top: 98px;
+    display: flex;
+    justify-content: end;
+    a{
+        color: white;
+        font-size: 25px;
+        letter-spacing: 2px;
+        svg{
+            margin-left: 15px;
+        }
+    }
+}
+.exploreBg{
+   position: relative;
+   &:before{
+    content: "";
+    position: absolute;
+    top: -28%;
+    left: -2%;
+    width: 70%;
+    height: 1347px;
+    background-image: url(../images/Ellipse.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transform: rotate(20deg);
+   }
+}
+.exploreSection{
+    position: relative;
+    top: -80px;
+}
+.exploreItems{
+    overflow: hidden;
+    width: 100%;
+    margin: 0 !important;
+    padding: 47px 0;
+    .slick-track{
+        display: flex;
+    }
+    .expoloerInner{
+        background: white;
+        box-shadow: 4px 0px 10px #80808078;
+        padding: 17px 30px 10px 25px;
+        border-radius: 20px;
+        margin: 0 15px;
+        &:hover{
+            > a{text-decoration: none;}
+        }
+        a{display: block;}
+        .exploreProd{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 45px;
+                letter-spacing: 1px;
+            }
+        }
+        .itemCount{color: #EB9F5F;}
+        .imgRow{
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            h6{
+                span.disCount{
+                    text-transform: uppercase;
+                    border: 1px solid;
+                    padding: 7px 20px 2px 20px;
+                    display: block;
+                    border-radius: 21px;
+                    font-size: 25px;
+                    letter-spacing: 1px;
+                }
+            }
+            img.prodDemo{
+                height: 170px;
+            }
+        }
+    }
+}
+
+
+.imgBracelets{
+    .seventytwo{
+        height: 200px;
+    }
+    .braceletsPicture{
+        height: 584px;
+        position: relative;
+        top: -20px;
+    }
+}
+
+.braceletsTxt{
+    h5{
+        color: #018AFE;
+        font-size: 140px;
+        line-height: 130px;
+        text-transform: uppercase;
+    }
+    p{
+        color: gray !important;
+        @extend .desParah;
+    }
+    .braceletsFlex{
+        display: flex;
+        .buyIt{
+            background: #018AFE;
+            padding: 15px 30px 9px 30px;
+            color: white;
+            letter-spacing: 2px;
+            font-size: 30px;
+            margin-right: 40px;
+            border-radius: 39px;
+        }
+        .ratingsItem{
+            .fullColor{
+                color: #018AFE;
+            }
+            .halfColor{color: #018AFE;}
+            h4{
+                color: #018AFE;
+                font-size: 25px;
+                letter-spacing: 2px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.populerBox{
+    span{
+        color: #EB9F5F;
+        font-size: 44px;
+        margin-top: 70px;
+        font-family: 'Italianno', cursive;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    h5{
+        color: #018AFE;
+        font-size: 100px;
+        line-height: 90px;
+    }
+}
+
+.marTop{
+    margin-top: 50px;
+}
+.populerProd{
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 100px 0px;
+    border: 5px solid #dae0e5;
+    border-radius: 20px;
+    a{
+        display: block;
+        text-align: center;
+    }
+    &:hover{
+        color: inherit;
+        text-decoration: none;
+    }
+    img{
+        height: 160px;
+        margin: 0 auto;
+        display: block;
+    }
+    span{
+        color: #EB9F5F;
+        font-size: 36px;
+    }
+    h4{
+        color: gray
+    }
+    .prodBtn{
+        background: #018AFE;
+        color: $textColor;
+        width: 50%;
+        position: absolute;
+        padding: 16px 0;
+        bottom: -32px;
+        font-size: 23px;
+        letter-spacing: 2px;
+        border-radius: 45px;
+    }
+}
+
+.copyRight{
+    margin-top: 100px;
+    background: linear-gradient(27deg, rgba(10,135,253,1) 25%, rgba(230,117,197,1) 75%);
+}
+.rightsMessage{
+    text-align: center;
+    color: $textColor;
+    margin: 0;
+    padding: 8px 0 0 0;
+    letter-spacing: 2px;
+    line-height: 38px;
+    font-size: 22px;
+}
